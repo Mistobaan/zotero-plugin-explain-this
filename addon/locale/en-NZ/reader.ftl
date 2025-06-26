@@ -1,0 +1,1 @@
+# Reader localization strings

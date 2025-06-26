@@ -42,13 +42,14 @@ export class LLMFactory {
               closeOnClick: false,
               closeTime: -1,
             });
-            progressWindow.createLine({
-              text: "Calling LLM...",
-              type: "default",
-              progress: 0,
-            });
-            progressWindow.show();
             try {
+              progressWindow.createLine({
+                text: "Calling LLM...",
+                type: "default",
+                progress: 0,
+              });
+              progressWindow.show();
+
               const explanation = await callLLM(text);
               progressWindow.changeLine({
                 text: explanation,
@@ -61,12 +62,14 @@ export class LLMFactory {
                 type: "error",
                 progress: 100,
               });
+              progressWindow.startCloseTimer(2000);
             }
           }
         },
       },
     ]);
   }
+
   public static registerReaderMenu() {
     const reader = getZoteroReaderInstance();
     if (reader) {

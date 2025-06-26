@@ -1,4 +1,4 @@
 pref("enable", true);
-pref("input", "This is input");
-pref("llm.endpoint", "");
-pref("llm.apiKey", "");
+pref("prompt", "Explain the following passage");
+pref("llm.ENGINE", "gemini");
+pref("llm.MODEL_NAME", "");

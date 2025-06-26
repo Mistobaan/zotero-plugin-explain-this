@@ -8,9 +8,9 @@ declare namespace _ZoteroTypes {
   interface Prefs {
     PluginPrefsMap: {
       "enable": boolean;
-      "input": string;
-      "llm.endpoint": string;
-      "llm.apiKey": string;
+      "prompt": string;
+      "llm.ENGINE": string;
+      "llm.MODEL_NAME": string;
     };
   }
 }

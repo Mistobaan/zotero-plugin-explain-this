@@ -2,6 +2,7 @@ import { initLocale } from "./utils/locale";
 import { registerPrefsScripts } from "./modules/preferenceScript";
 import { createZToolkit } from "./utils/ztoolkit";
 import { LLMFactory } from "./modules/llm";
+import { BasicExampleFactory } from "./modules/examples";
 
 async function onStartup() {
   await Promise.all([
@@ -12,9 +13,9 @@ async function onStartup() {
 
   initLocale();
 
-  // BasicExampleFactory.registerPrefs();
+  BasicExampleFactory.registerPrefs();
 
-  // BasicExampleFactory.registerNotifier();
+  BasicExampleFactory.registerNotifier();
 
   // KeyExampleFactory.registerShortcuts();
 

@@ -1,7 +1,7 @@
-pref-title = Addon Template Example
+pref-title = Settings
 pref-enable =
     .label = Enable
-pref-input = Input
+pref-input = Prompt
 pref-llm-endpoint = LLM Endpoint
 pref-llm-apiKey = API Key
 
