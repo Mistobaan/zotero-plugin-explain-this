@@ -30,6 +30,7 @@
     "update-deps": "npm update --save"
   },
   "dependencies": {
+    "multi-llm-ts": "^4.0.3",
     "zotero-plugin-toolkit": "^5.0.0"
   },
   "devDependencies": {

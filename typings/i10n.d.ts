@@ -3,6 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 export type FluentMessageId =
+  | 'explain-this'
   | 'item-info-row-example-label'
   | 'item-section-example1-head-text'
   | 'item-section-example1-sidenav-tooltip'
@@ -16,6 +17,8 @@ export type FluentMessageId =
   | 'pref-enable'
   | 'pref-help'
   | 'pref-input'
+  | 'pref-llm-apiKey'
+  | 'pref-llm-endpoint'
   | 'pref-title'
   | 'prefs-table-detail'
   | 'prefs-table-title'

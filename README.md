@@ -411,3 +411,10 @@ This section shows the directory structure of a template.
 Use this code under AGPL. No warranties are provided. Keep the laws of your locality in mind!
 
 If you want to change the license, please contact me at <wyzlshx@foxmail.com>
+
+## Development
+
+```bash
+$ export ZOTERO_PLUGIN_ZOTERO_BIN_PATH=/Applications/Zotero.app/Contents/MacOS/zotero
+$ npm run start
+```
